@@ -38,6 +38,8 @@ func login(response http.ResponseWriter, request *http.Request) {
 
 }
 
+//should be a nice display page welcoming the user into webserver asking how many
+//alpine images they would like to run
 func numcontainer(response http.ResponseWriter, request *http.Request) {
 
 }
