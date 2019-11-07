@@ -7,6 +7,9 @@
     <title>POD HUB</title>
   </head>
   <body>
+      <!-- here we can see the template using the bool var passed in as a user structure -->
+    <!-- if twe sucsessfully login it will display the table for them to input how many instances -->
+    <!-- the user wants to create -->
     {{ if .Signedin }}
     <div container="justify-content-center col-lg-8">
         <h1 id="title ">DOCKER APP</h1>
@@ -20,6 +23,9 @@
             <button type="submit" value="login"class="btn btn-primary">Sign in</button>
           </form>
           </div>
+    <!-- if the Signedin is false we redisplay the login information to rerun the login  -->
+    <!-- because they have entered wrong password or usernamne -->    
+    <!-- for now e jsut use palceholders for actual things -->
     {{ else }}
     <br>
     <div style="text-decoration-color: red;">You have entered a wrong yousername or password</div>

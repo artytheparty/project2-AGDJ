@@ -33,7 +33,9 @@ func login(response http.ResponseWriter, request *http.Request) {
 			user.Signedin = false
 		}
 	}
-
+	//here we pass in the user which is a Loggedin Struct which holds only one value of
+	//boolean this will help the html template workout which html to show
+	//you can see the usecase of the template in the login.html which handles that
 	fmt.Println(temp.Execute(response, user))
 
 }
